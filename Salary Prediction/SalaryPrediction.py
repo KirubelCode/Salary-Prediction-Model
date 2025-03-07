@@ -1,7 +1,7 @@
 # Produced by: Kirubel Temesgen
 # College ID: C00260396
 # Date: 10/11/2024
-# Description: To use linear aggression to predict employee salaries
+# Description: To use multiple linear aggression to predict employee salaries
 #              given the business sector and one other user-selected parameter, 
 #              i.e region, business size.
 
