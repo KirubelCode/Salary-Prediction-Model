@@ -1,44 +1,38 @@
 Salary Prediction Model
-Produced by: Kirubel Temesgen
-College ID: C00260396
-Date: 10/11/2024
+A Flask-based web application that uses Multiple Linear Regression to predict employee salaries based on industry sector and one additional factor (such as region or company size). This project is built with real-world usability in mind – users can upload their own salary dataset, choose parameters, and get instant salary predictions along with visualisations and accuracy metrics. It provides an intuitive way for HR teams and data analysts to explore salary patterns and make data-driven decisions. 
 
-Overview
-This project utilises Multiple Linear Regression to predict employee salaries based on business sectors and an additional user-selected parameter, such as region or business size. 
-The model is deployed using Flask, allowing users to upload datasets, select relevant parameters, and visualise salary predictions.
+--------
 
 Features
-Upload CSV Files – Users can upload salary datasets with business sector and other attributes.
-Predict Salaries – Model predicts salaries based on selected parameters.
-Visualisations – Scatter plots show actual vs predicted salaries, categorised by business sector.
-Error Handling – Redirects users if the model’s accuracy is too low.
-Flask Web Application – Interactive web-based interface.
+- CSV Data Upload: Upload a custom dataset (CSV file) containing salary information, business sectors, and other relevant features.
+- Predictive Modeling: Select the salary column, the sector column, and an optional second factor (e.g. geographic region or company size). The app will train a Multiple Linear Regression model on the fly to predict salaries based on these inputs.
+- Interactive Visualisations: After prediction, view a scatter plot of Actual vs Predicted salaries, color-coded by business sector. This helps visualise the model’s performance at a glance.
+- Performance Metrics: The application displays key regression metrics such as Mean Squared Error (MSE) and R² score, so you can evaluate how well the model fits your data. If the model’s accuracy (R²) is below an acceptable threshold, the app will alert you (and redirect if necessary) to ensure results are meaningful.
+- User-Friendly Web Interface: Built with Flask, the system provides a clean web UI. It guides you through uploading your data, selecting parameters, and viewing results, making the tool accessible even to those with minimal programming experience.
 
-Installation
-1. Clone the Repository
-Run the following command in your terminal:
 
-git clone https://github.com/KirubelCode/Salary-Prediction-Model.git
-cd Salary-Prediction-Model
+-------
 
-2. Install Dependencies
-Ensure you have Python 3.x installed, then install the required libraries
+Quick Setup
+- git clone https://github.com/KirubelCode/Salary-Predicition-Model
+- cd Salary-Predicition-Model
+- Install Dependencies
+- python SalaryPrediction.py
+  
+Then go to http://127.0.0.1:5000/ in your browser.
 
-3. Run the Application
-python app.py
 
-The application will be available at: http://127.0.0.1:5000/
+------
 
-Usage
-Upload a CSV dataset with salary, business sector, and other relevant attributes.
-Select salary and sector columns for prediction.
-(Optional) Filter results based on business size or region.
-View predictions and performance metrics (MSE, R² Score).
-Visualise scatter plots of actual vs predicted salaries.
+Project Structure
+- Salary Prediction/ – App + ML code (Flask + sklearn)
 
-Technologies Used
-Python
-Flask (Web framework)
-Scikit-Learn (Machine Learning)
-Pandas (Data handling)
-Matplotlib (Visualisation)
+- TestData/ – Sample datasets
+
+- Functional Specification/ – Full system doc
+
+------
+
+Tech Used
+Python · Flask · scikit-learn · Pandas · Matplotlib ..
+
