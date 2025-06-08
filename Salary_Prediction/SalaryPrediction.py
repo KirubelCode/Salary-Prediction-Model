@@ -20,6 +20,7 @@ import base64
 
 app = Flask(__name__, template_folder='templates')
 
+
 # Route to get column names from uploaded CSV
 @app.route('/columns', methods=['POST'])
 def columns():
@@ -46,7 +47,7 @@ def employee_sizes():
 # Main page route
 @app.route('/')
 def index():
-    return render_template('indexs.html')
+    return render_template('index.html')
 
 @app.route('/error')
 def error_page():
