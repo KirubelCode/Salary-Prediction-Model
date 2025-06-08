@@ -118,7 +118,7 @@ def predict():
         colors = get_cmap('tab20', len(unique_sectors))
 
         # Create the scatter plot
-        plt.figure(figsize=(17, 8))
+        plt.figure(figsize=(17,13))
         for i, sector in enumerate(unique_sectors):
             sector_filter = sectors_test == sector
             plt.scatter(
@@ -132,7 +132,10 @@ def predict():
         plt.xlabel('Actual Salary')
         plt.ylabel('Predicted Salary')
         plt.title('Actual vs Predicted Salary (Linear Regression) with Sectors')
-        plt.legend(loc='center left', bbox_to_anchor=(1, 0.5), title="Sectors")
+        plt.legend(loc='center left', bbox_to_anchor=(1, 0.5), title="Sectors",
+        title_fontsize=17,
+        fontsize=15 )
+
         plt.tight_layout()
 
         # Convert plot to an image
