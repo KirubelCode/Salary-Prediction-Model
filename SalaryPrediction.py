@@ -19,7 +19,8 @@ import io
 import base64
 import os
 
-app = Flask(__name__, template_folder='templates')
+app = Flask(__name__, template_folder='Salary_Prediction/templates')
+
 
 
 # Route to get column names from uploaded CSV
