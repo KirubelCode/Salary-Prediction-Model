@@ -18,7 +18,7 @@ from matplotlib.cm import get_cmap
 import io
 import base64
 
-app = Flask(__name__)
+app = Flask(__name__, template_folder='templates')
 
 # Route to get column names from uploaded CSV
 @app.route('/columns', methods=['POST'])
